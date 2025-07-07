@@ -1,0 +1,224 @@
+/*Css connect*/
+
+/*style generale du formulaire*/
+form{
+    margin-right: -85%;
+    margin-left: -30%;
+    padding: 15px;
+    float: right;
+    border-style: ridge; 
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 5px solid #00ddff;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 10px 15px rgba(10, 10, 10, 0.25);
+}
+/*style du bouton de soumission*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(c6.jpg), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container h2 {
+    text-align: center;
+    color: #2ad5eb;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+form input:hover{
+    transform: scale(1.03);
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input {
+    margin: 10px ;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-style:ridge;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #00ddff;
+    border-width: 3px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 10px 15px rgba(10, 10, 10, 0.25);
+    color: rgb(233, 240, 238);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+    
+
+/*Mes changements*/
+.container input[type="submit"] {
+    background-color: #bad1e9;
+    border-style:ridge;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #00ddff;
+    border-width: 3px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 10px 15px rgba(10, 10, 10, 0.25);
+    color: rgb(31, 141, 155);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-left:20%;
+    margin-right: 20%;
+    box-shadow: 0px 0px 10px rgb(158, 158, 209);
+}
+body{
+ 
+    background: linear-gradient url(qw.png) center center no-repeat;
+    background-size: cover;
+        
+    }
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1px;
+}
+
+
+
+div.container .ring{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px ridge rgb(0, 225, 255) ;
+    border-top: 4px ridge ;
+    border-width: 6px;
+    animation: animate 2.5s linear infinite;
+}
+
+@keyframes animate{
+        0%{ 
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+}
+
+div.container .ring::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #feffff;
+    box-shadow: 0, 0, 0, 5px #067898,
+    0, 0, 0, 10px #055f78,
+    0, 0, 0, 20px #033f50,
+    0, 0, 20px #03a1cc,
+    0, 0,  50px #04c9ff;
+}
+
+div.container .ring:nth-child(2){
+    animation: animate2 20s linear infinite;
+    animation-delay: -1s;
+    border-top: 4px ridge #00fbff ;
+    border-left: 4px ridge #a50000;
+    border-bottom: 4px ridge rgb(0, 0, 255) ;
+    border-width: 6px;
+}
+
+div.container .ring:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #850000;
+    box-shadow: 0, 0, 0, 5px #06981c,
+    0, 0, 0, 10px #057816,
+    0, 0, 0, 20px #03500b,
+    0, 0, 20px #03cc17,
+    0, 0,  50px #04ff32;
+}
+
+
+@keyframes animate2{
+    0%{ 
+        transform: rotate(3600deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+div.container .ring:nth-child(3){
+    animation: animate2 15s linear infinite;
+    animation-delay: -1s;
+    position: absolute;
+    top: -60.66px;
+    border-top: 6px double rgb(11, 236, 89);
+    border-left: 6px double #fb00bc;
+    border-bottom: 6px double #dbea07;
+    border-width: 6px;
+}
+
+div.container .ring:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #ff43f9;
+    box-shadow: 0, 0, 5px #ac0598,
+    0, 0,  10px #a1287f,
+    0, 0,  20px #6f0e5c,
+    0, 0,  20px #f1b9db,
+    0, 0, 50px #dfd2dd;
+}
+.bn{
+    text-decoration: none;
+}
+.btn{
+    background-color: #00ddff;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 17px;
+}
+.con{
+    color: rgba(19, 15, 15, 0.436);
+}
+
+.input{
+    background-color: #00ddff;
+    border-radius: 30px;
+    border: 0px;
+    font-size: 17px;
+}
+
+

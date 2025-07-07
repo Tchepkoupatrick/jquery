@@ -1,0 +1,33 @@
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: serif;
+    box-shadow: 5px 4px 6px rgba(255, 255, 255, 0.54);
+}
+.cc-navbar .nav-link{
+    border-bottom: 1PX solid transparent;
+    transition: pardding-bottom .4s ease-in-out, border-color .3s ease;
+}
+.cc-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-teal);
+}
+.pat{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(yess.png) center center no-repeat;
+    background-size: cover;
+}
+.yo{
+    font-family: serif;
+    font-size: 30px ;
+    font-weight: 400;
+}
+.pp{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.ft{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(footer.png) center center no-repeat;
+    background-size: cover;
+}
+.po:hover{
+    transform: scale(1.2);
+}

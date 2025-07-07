@@ -1,0 +1,8 @@
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    response TEXT,
+    responded_at TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP
+);

@@ -1,0 +1,18 @@
+/* Styles personnalisés complémentaires à Bootstrap */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea.form-control {
+    min-height: 150px;
+}
+
+.list-group-item h5 {
+    color: #0d6efd;
+}
+
+.list-group-item small.text-danger {
+    font-weight: bold;
+}
